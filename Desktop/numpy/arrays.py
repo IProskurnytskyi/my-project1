@@ -100,7 +100,8 @@ print(b.sum(axis=0)) # sum of each column
 print(b.min(axis=1)) # min of each row
 print(b.cumsum(axis=1)) # cumulative sum along each row, so next value plus previous in the row.
 
-print("-"*100)
+print("="*100)
+print("="*100)
 
 B = np.arange(3)
 print(B)
@@ -209,15 +210,34 @@ print(a)
 
 d = a.copy
 print(d is a)
+print('='*100)
 
+print(np.eye(4))
 
+new = np.array([[1,2,3],[4,5,6],[7,8,9]])
 
+print(new[1,2]) # This method is better because usually it is less prone to error.
 
+print(new[1][2]) # This is worser.
 
+print(new[1:,:2])
 
+print(100*'=')
 
+print(new > 3) # Boolean Values
 
+bool_arr = new > 5
+print(new[bool_arr])
 
+print(new[new>4])
+
+print(new * new)
+
+print(new.argmax()) # To find index location using argmin or argmax
+
+print(np.ones(10) * 5)
+
+print(new.sum(axis=0))
 
 
 
